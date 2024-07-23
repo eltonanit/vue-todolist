@@ -34,6 +34,14 @@ createApp ({
     methods: {
         deleteTask(index) {
             this.tasks.splice(index, 1);
+        },
+        addTask() {
+            let obj =  [
+                text: this.text,
+                done: false
+            ]
+            this.tasks.push(obj);
+            this.text = null; 
         }
 
     }
