@@ -1,9 +1,9 @@
-const {creatApp} = Vue;
+const { createApp } = Vue;
 
 createApp ({
     data () {
         return {
-            tasks:[
+            tasks: [
                 {
                     text: 'Fare la spesa',
                     done: false
