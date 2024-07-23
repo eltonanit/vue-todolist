@@ -27,11 +27,14 @@ createApp ({
                 {
                     text: 'Fare la spesa',
                     done: false
-                },
+                }
             ]
         }
     }, 
-    methods : {
+    methods: {
+        deleteTask(index) {
+            this.tasks.splice(index, 1);
+        }
 
     }
 }).mount('#app');
